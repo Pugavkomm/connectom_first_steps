@@ -30,6 +30,9 @@ tensorflow-gpu==2.10.0
 .
 ├── LICENSE 
 ├── README.md
+├── connecom
+│   ├── node_model
+│   ├── utils
 ├── env_connectom
 │   ├── Include
 │   ├── Lib
