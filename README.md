@@ -24,7 +24,25 @@ tensorflow-gpu==2.10.0
 ```
 Версии пакетов (зависимостей) являются последними на 17.09.2022.
 Для установки используется ```Pip```: ```pip install -r req.txt```.
-
+### env и установка зависимостей
+Для работы с проектом лучше всего использовать python версии 3.10.2. Создаем env:
+```bash
+python -m venv env
+```
+Активируем:
+**windows**
+```bash
+.\env\Scripts\activate
+```
+**Linux**
+```
+source env/bin/activate
+```
+Устновка зависимостей
+```bash
+python -m pip install --upgrade pip
+pip install -r req.txt
+```
 ## Структура проекта
 ```
 .
