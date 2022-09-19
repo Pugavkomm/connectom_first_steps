@@ -1,0 +1,5 @@
+numpy==1.23.3
+scipy==1.9.1
+networkx==2.8.6
+matplotlib==3.6.0
+tensorflow-gpu==2.10.0

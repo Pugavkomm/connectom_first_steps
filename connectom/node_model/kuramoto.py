@@ -131,7 +131,7 @@ class Kuramoto:
         return result
 
     def run(self, initial_conditions: tf.Tensor | np.ndarray):
-        result = initial_conditions = tf.reshape(
+        initial_conditions = tf.reshape(
             tf.constant(initial_conditions, dtype=self.data_type), (self.num_nodes, 1)
         )
         print("Run calculation...")
@@ -140,7 +140,4 @@ class Kuramoto:
                 (self.num_nodes * self.num_steps * 1e-6 * (
                     4 if self.data_type == tf.float32 else 8))}MB"""
         )
-        result = tf.Variable(tf.zeros(shape=(self.num_nodes, self.num_steps + 1)))
-        result[:, 0].assign(initial_conditions)
-
-        return self._rk4(result)
+        return self._rk4(initial_conditions)
