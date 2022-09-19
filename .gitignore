@@ -129,5 +129,8 @@ dmypy.json
 .pyre/
 
 # Custum conf
-.graphml
-.vscode
+*.graphml
+.vscode/
+env/
+env_connectom/
+conf.env
